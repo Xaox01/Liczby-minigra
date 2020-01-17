@@ -1,0 +1,40 @@
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Więcej czy mniej?</title>
+<!--LINKS-->
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+<script type="text/javascript" src="game.js"></script>
+
+
+</head>
+<div id="page-1" class="page">
+		<h1>Mniej czy więcej?</h1>
+		<button data-limit="10">Łatwy</button>
+		<button data-limit="100">Normalny</button>
+		<button data-limit="1000">Trudny</button>
+		<button data-limit="10000">EXPERT</button>
+
+</div>
+
+<div id="page-2" class="page">
+		<p class="used">Cyfry użyte:
+				<br><span></span></p>
+		<p class="tries">Próby: <span>0</span></p>
+		<h2>Odgadnij numer od 0 do <span></span></h2>
+		<p class="response"></p>
+		<input type="number" class="input" name="input">
+		<button>Spróbuj</button>
+</div>
+
+<div id="page-3" class="page">
+		<h2>Gratulacje!<br><span>Wygrałeś!</span></h2>
+		<p>Za <span> 0 </span> próbą!</p>
+		<p class="tip">Niezle, przebijesz to?</p>
+		<br>
+		<button onclick="console.log(window.location); window.location.href = window.location;">Graj ponownie</button>
+		<p class="tries"></p>
+</div>
+</html>
